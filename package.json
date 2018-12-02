@@ -1,0 +1,58 @@
+{
+  "name": "ilusion-js",
+  "version": "0.1.0",
+  "description": "Another mock server, based on faker.js and json-schema",
+  "main": "server.js",
+  "scripts": {
+    "test": "nyc mocha --timeout=3000 **/*.test.js",
+    "lint": "eslint src --color",
+    "p": "prettier --write 'src/**/*.js'",
+    "p:w": "onchange 'src/**/*.js' -- prettier --write {{changed}}"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heltondoria/Ilusion.git"
+  },
+  "keywords": [
+    "mock",
+    "faker.js",
+    "json",
+    "json-schema"
+  ],
+  "author": "Helton Dória Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heltondoria/Ilusion/issues"
+  },
+  "homepage": "https://github.com/heltondoria/Ilusion#readme",
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^4.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jsverify": "^0.8.4",
+    "knuth-shuffle": "^1.0.8",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "onchange": "^5.1.0",
+    "prettier": "^1.15.2",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.2.0",
+    "stryker": "^0.32.0",
+    "stryker-api": "^0.21.5",
+    "stryker-babel-transpiler": "^0.7.8",
+    "stryker-html-reporter": "^0.16.7",
+    "stryker-javascript-mutator": "^0.11.4",
+    "stryker-mocha-framework": "^0.13.0",
+    "stryker-mocha-runner": "^0.15.0",
+    "stryker-typescript": "^0.15.4",
+    "stryker-webpack-transpiler": "^0.7.9"
+  }
+}
